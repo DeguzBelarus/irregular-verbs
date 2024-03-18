@@ -1,0 +1,218 @@
+//mixins
+@mixin scroll {
+  & {
+    scrollbar-width: thin;
+    scrollbar-color: $cv-background-color rgba(#eee, 0.2);
+    scrollbar-gutter: stable;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 5px;
+    background-color: $main-theme-color;
+    border-radius: 5px;
+  }
+}
+
+// media queries mixins
+$extra-large-laptop-min-width: 1440px;
+$large-laptop-width: 1439px;
+$laptop-width: 1023px;
+$tablet-width: 767px;
+$mobile-big-width: 424px;
+$mobile-medium-width: 374px;
+$mobile-small-width: 319px;
+
+@mixin media-extra-large-laptop {
+  @media screen and (min-width: $extra-large-laptop-min-width) {
+    @content;
+  }
+}
+
+@mixin media-large-laptop {
+  @media screen and (max-width: $large-laptop-width) {
+    @content;
+  }
+}
+
+@mixin media-laptop {
+  @media screen and (max-width: $laptop-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media screen and (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile-big {
+  @media screen and (max-width: $mobile-big-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile-medium {
+  @media screen and (max-width: $mobile-medium-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile-small {
+  @media screen and (max-width: $mobile-small-width) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// flex mixins
+// flex row mixins
+@mixin flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-line-center-vertical-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin flex-line-center-vertical-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@mixin flex-line-start-vertical-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-line-start-vertical-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin flex-line-end-vertical-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin flex-line-end-vertical-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+@mixin flex-line-spacebetween-vertical-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+// flex column mixins
+@mixin flex-column-all-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column-line-center-vertical-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin flex-column-line-start-vertical-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@mixin flex-column-line-center-vertical-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin flex-column-line-start-vertical-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin flex-column-line-end-vertical-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@mixin flex-column-line-end-vertical-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+@mixin flex-column-vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin flex-column-line-center-vertical-spacebetween {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// other mixins
+@mixin hidden-scroll {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin user-select-none {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
