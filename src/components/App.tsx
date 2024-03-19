@@ -1,7 +1,14 @@
 import { FC } from 'react';
 
 import { useRoutes } from 'src/hooks/useRoutes';
+import { CopyrightText } from './CopyrightText/CopyrightText';
 
 export const App: FC = () => {
-  return useRoutes();
+  const routes = useRoutes();
+  return (
+    <>
+      {routes}
+      <CopyrightText />
+    </>
+  );
 };

@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.CopyrightText {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: $accents-color;
+  font-size: 12px;
+  font-weight: bold;
+}
