@@ -1,7 +1,7 @@
-import { MainPage } from '../pages/MainPage/MainPage';
+import { FC } from 'react';
 
-export const  App = () => {
-  return <MainPage />;
-}
+import { useRoutes } from 'src/hooks/useRoutes';
 
-export default App;
+export const App: FC = () => {
+  return useRoutes();
+};

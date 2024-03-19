@@ -1,9 +1,8 @@
 @import "../../styles/variables";
 
-.MainPage {
+.LearnPage {
   width: 100%;
   height: 100vh;
   height: 100dvh;
   @include flex-column-all-center;
-  gap: 10px;
 }

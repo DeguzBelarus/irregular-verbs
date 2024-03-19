@@ -12,7 +12,9 @@ body {
 }
 
 button {
-  &:hover {
+  background-color: transparent;
+
+  &:hover:not(:disabled) {
     cursor: pointer;
   }
 }
