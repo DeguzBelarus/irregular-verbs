@@ -11,10 +11,8 @@ interface Props {
 export const LearnVerbsWrapper: FC<Props> = memo(({ children, verbSearchInput }) => {
   return (
     <div className={styles.LearnVerbsWrapper}>
-      <div className={styles.learnVerbsContainer}>
-        {verbSearchInput}
-        {children}
-      </div>
+      <div className={styles.searchInputWrapper}>{verbSearchInput}</div>
+      <div className={styles.learnVerbsContainer}>{children}</div>
     </div>
   );
 });
