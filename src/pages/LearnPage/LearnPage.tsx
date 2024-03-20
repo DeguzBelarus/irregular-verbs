@@ -16,9 +16,7 @@ export const LearnPage: FC = () => {
     ? IRREGULAR_VERBS_DATA.filter((verbData) => verbData.infinitive.startsWith(verbSearchKey))
     : IRREGULAR_VERBS_DATA;
 
-  const verbSearchKeyHandler = (event: ChangeEvent<HTMLInputElement>) => {
-    event.cancelable && event.preventDefault();
-    const { value } = event.target;
+  const verbSearchKeyHandler = ({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
     setVerbSearchKey(value);
   };
   return (
