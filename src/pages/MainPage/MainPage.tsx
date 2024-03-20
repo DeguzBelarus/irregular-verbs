@@ -13,7 +13,7 @@ export const MainPage: FC = () => {
     <div className={styles.MainPage}>
       <Link className={styles.learnPageLink} to={LEARN_PAGE__PATH}>
         <BookIcon className={styles.bookIcon} />
-        LEARN
+        <span>LEARN</span>
       </Link>
       {!isQuizStarted ? (
         <>

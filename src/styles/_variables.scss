@@ -6,7 +6,7 @@ $accents-color: #05c3dd;
 @mixin scroll {
   & {
     scrollbar-width: thin;
-    scrollbar-color: $cv-background-color rgba(#eee, 0.2);
+    scrollbar-color: $accents-color rgba(#eee, 0.2);
     scrollbar-gutter: stable;
   }
 
@@ -24,7 +24,7 @@ $accents-color: #05c3dd;
   &::-webkit-scrollbar-thumb {
     width: 5px;
     height: 5px;
-    background-color: $main-theme-color;
+    background-color: $accents-color;
     border-radius: 5px;
   }
 }

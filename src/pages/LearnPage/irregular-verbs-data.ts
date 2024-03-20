@@ -1,6 +1,11 @@
-import { IIrregularVerbData } from './types';
+import { IIrregularVerbData } from '../MainPage/types';
 
-export const irregularVerbsData: Array<IIrregularVerbData> = [
+function irregularVerbsDataSortMethod(prevVerb: IIrregularVerbData, nextVerb: IIrregularVerbData) {
+  if (prevVerb.infinitive > nextVerb.infinitive) return 1;
+  return -1;
+}
+
+export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
   {
     infinitive: 'be',
     pastSimple: ['was', 'were'],
@@ -673,10 +678,4 @@ export const irregularVerbsData: Array<IIrregularVerbData> = [
     pastParticiple: ['won'],
     translation: ['выйграть'],
   },
-  {
-    infinitive: 'write',
-    pastSimple: ['wrote'],
-    pastParticiple: ['written'],
-    translation: ['писать'],
-  },
-];
+].sort(irregularVerbsDataSortMethod);
