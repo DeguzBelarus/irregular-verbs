@@ -187,6 +187,12 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     translation: ['кормить'],
   },
   {
+    infinitive: 'feel',
+    pastSimple: ['felt'],
+    pastParticiple: ['felt'],
+    translation: ['чувствовать'],
+  },
+  {
     infinitive: 'fight',
     pastSimple: ['fought'],
     pastParticiple: ['fought'],
@@ -514,7 +520,7 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     infinitive: 'shut',
     pastSimple: ['shut'],
     pastParticiple: ['shut'],
-    translation: ['закрывать - синоним "close"'],
+    translation: ['закрывать', 'захлопнуть'],
   },
   {
     infinitive: 'sing',
@@ -603,7 +609,7 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
   {
     infinitive: 'strive',
     pastSimple: ['strove'],
-    pastParticiple: ['strive'],
+    pastParticiple: ['striven'],
     translation: ['стараться'],
   },
   {
@@ -677,5 +683,11 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     pastSimple: ['won'],
     pastParticiple: ['won'],
     translation: ['выйграть'],
+  },
+  {
+    infinitive: 'write',
+    pastSimple: ['wrote'],
+    pastParticiple: ['written'],
+    translation: ['писать'],
   },
 ].sort(irregularVerbsDataSortMethod);

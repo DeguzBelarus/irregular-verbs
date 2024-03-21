@@ -25,7 +25,6 @@
     padding-top: 38px;
     flex-wrap: wrap;
     overflow-y: auto;
-    overflow-x: hidden;
     @include scroll;
 
     @include media-tablet {
