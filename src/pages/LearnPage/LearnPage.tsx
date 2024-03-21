@@ -13,7 +13,9 @@ export const LearnPage: FC = () => {
   const verbSearchInputRef = useRef<HTMLInputElement>(null);
   const [verbSearchKey, setVerbSearchKey] = useState('');
   const filteredVerbsData = verbSearchKey
-    ? IRREGULAR_VERBS_DATA.filter((verbData) => verbData.infinitive.startsWith(verbSearchKey))
+    ? IRREGULAR_VERBS_DATA.filter((verbData) =>
+        verbData.infinitive.toUpperCase().startsWith(verbSearchKey.toUpperCase()),
+      )
     : IRREGULAR_VERBS_DATA;
 
   const verbSearchKeyHandler = ({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
