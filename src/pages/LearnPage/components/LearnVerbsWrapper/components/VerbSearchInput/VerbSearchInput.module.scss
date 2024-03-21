@@ -2,10 +2,8 @@
 
 .VerbSearchInput {
   width: 100%;
-  height: 35px;
+  height: 100%;
   @include flex-column-line-end-vertical-center;
-  position: absolute;
-  top: -1px;
   padding-bottom: 3px;
   background-color: #fff;
   z-index: 1;
