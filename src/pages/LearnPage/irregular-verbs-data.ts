@@ -676,7 +676,7 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     infinitive: 'wear',
     pastSimple: ['wore'],
     pastParticiple: ['worn'],
-    translation: ['носить (одежду)'],
+    translation: ['носить, надевать (одежду)'],
   },
   {
     infinitive: 'win',
