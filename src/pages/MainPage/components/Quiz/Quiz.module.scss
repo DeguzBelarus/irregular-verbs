@@ -1,0 +1,10 @@
+@import "../../../../styles/variables";
+
+.Quiz {
+  width: 700px;
+  @include flex-column-all-center;
+
+  @include media-tablet {
+    width: 90%;
+  }
+}

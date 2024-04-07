@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as ExitIcon } from '../../assets/img/exit-icon.svg';
 import { ROOT_PATH } from 'src/constants/constants';
 import { LearnVerbsWrapper } from './components/LearnVerbsWrapper/LearnVerbsWrapper';
-import { IRREGULAR_VERBS_DATA } from './irregular-verbs-data';
+import { IRREGULAR_VERBS_DATA } from '../../irregular-verbs-data';
 import { LearnVerbItem } from './components/LearnVerbsWrapper/components/LearnVerbItem/LearnVerbItem';
 import { VerbSearchInput } from './components/LearnVerbsWrapper/components/VerbSearchInput/VerbSearchInput';
 import styles from './LearnPage.module.scss';

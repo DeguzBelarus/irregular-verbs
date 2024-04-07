@@ -24,4 +24,22 @@
       height: 100%;
     }
   }
+
+  .returnToMainButton {
+    display: block;
+    height: 20px;
+    @include flex-all-center;
+    gap: 5px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: $accents-color;
+    z-index: 1;
+    cursor: pointer;
+
+    .exitIcon {
+      width: 20px;
+      height: 100%;
+    }
+  }
 }

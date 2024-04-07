@@ -1,0 +1,10 @@
+@import "../../../../../../styles/variables";
+
+.QuizProgress {
+  width: 12px;
+  height: 10px;
+  @include flex-line-start-vertical-center;
+  border: 2px solid $accents-color;
+  border-radius: 8px;
+  background-color: rgba($color: $accents-color, $alpha: 0.6);
+}

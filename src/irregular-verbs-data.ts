@@ -1,4 +1,4 @@
-import { IIrregularVerbData } from '../MainPage/types';
+import { IIrregularVerbData } from './pages/MainPage/types';
 
 function irregularVerbsDataSortMethod(prevVerb: IIrregularVerbData, nextVerb: IIrregularVerbData) {
   if (prevVerb.infinitive > nextVerb.infinitive) return 1;

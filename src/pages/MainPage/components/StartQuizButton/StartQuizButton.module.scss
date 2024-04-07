@@ -2,6 +2,8 @@
 
 .StartQuizButton {
   padding: 10px 45px;
-  border: 3px double $accents-color;
-  color: $accents-color;
+  border: 2px solid $accents-color;
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
 }
