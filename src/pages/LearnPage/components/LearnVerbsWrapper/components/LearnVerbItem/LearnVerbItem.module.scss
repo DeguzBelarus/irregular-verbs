@@ -2,7 +2,7 @@
 
 .LearnVerbItem {
   width: 49.5%;
-  height: 120px;
+  height: 115px;
   position: relative;
   border: 1px solid $accents-color;
   border-radius: 12px;
@@ -35,7 +35,7 @@
 
   .rulesContainer {
     width: 100%;
-    height: 54%;
+    height: 50%;
     @include flex-line-center-vertical-top;
     gap: 2px;
 
