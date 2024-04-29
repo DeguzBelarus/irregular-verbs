@@ -1,9 +1,5 @@
+import { verbsArraySorting } from './utils/verbsArraySorting';
 import { IIrregularVerbData } from './types';
-
-function irregularVerbsDataSortMethod(prevVerb: IIrregularVerbData, nextVerb: IIrregularVerbData) {
-  if (prevVerb.infinitive > nextVerb.infinitive) return 1;
-  return -1;
-}
 
 export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
   {
@@ -804,4 +800,4 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     translation: ['писать'],
     isUnchangeable: false,
   },
-].sort(irregularVerbsDataSortMethod);
+].sort(verbsArraySorting);
