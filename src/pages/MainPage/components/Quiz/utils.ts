@@ -1,4 +1,4 @@
-import { IIrregularVerbData } from '../../types';
+import { IIrregularVerbData } from '../../../../types';
 
 export const shuffleArray = (array: Array<IIrregularVerbData>) => {
   if (!Array.isArray(array)) throw new TypeError('The argument array must be an array');

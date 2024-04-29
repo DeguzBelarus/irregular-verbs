@@ -3,6 +3,7 @@
 .Quiz {
   width: 700px;
   @include flex-column-all-center;
+  gap: 15px;
 
   @include media-tablet {
     width: 90%;

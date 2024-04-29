@@ -1,11 +1,11 @@
 import { FC, memo } from 'react';
 
-import { IIrregularVerbData } from 'src/pages/MainPage/types';
+import { IIrregularVerbData } from 'src/types';
 import { COMMA_WITH_SPACE } from 'src/constants/constants';
 import styles from './LearnVerbItem.module.scss';
 
 export const LearnVerbItem: FC<IIrregularVerbData> = memo(
-  ({ infinitive, pastParticiple, pastSimple, translation }) => {
+  ({ infinitive, pastParticiple, pastSimple, translation, isUnchangeable }) => {
     const translationString = translation.join(COMMA_WITH_SPACE);
     const pastSimpleString = pastSimple.join(COMMA_WITH_SPACE);
     const pastParticipleString = pastParticiple.join(COMMA_WITH_SPACE);
@@ -16,14 +16,23 @@ export const LearnVerbItem: FC<IIrregularVerbData> = memo(
           <span className={styles.translationSpan}>{translationString}</span>
         </p>
         <div className={styles.rulesContainer}>
-          <div className={styles.ruleContainer}>
-            <span className={styles.ruleTypeSpan}>Past Simple</span>
-            <span className={styles.ruleContentSpan}>{pastSimpleString}</span>
-          </div>
-          <div className={styles.ruleContainer}>
-            <span className={styles.ruleTypeSpan}>Past Participle</span>
-            <span className={styles.ruleContentSpan}>{pastParticipleString}</span>
-          </div>
+          {!isUnchangeable ? (
+            <>
+              <div className={styles.ruleContainer}>
+                <span className={styles.ruleTypeSpan}>Past Simple</span>
+                <span className={styles.ruleContentSpan}>{pastSimpleString}</span>
+              </div>
+              <div className={styles.ruleContainer}>
+                <span className={styles.ruleTypeSpan}>Past Participle</span>
+                <span className={styles.ruleContentSpan}>{pastParticipleString}</span>
+              </div>
+            </>
+          ) : (
+            <div className={styles.ruleContainer}>
+              <span className={styles.ruleTypeSpan}>Past Simple + Past Participle</span>
+              <span className={styles.ruleContentSpan}>{infinitive}</span>
+            </div>
+          )}
         </div>
       </div>
     );

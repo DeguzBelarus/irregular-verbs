@@ -1,0 +1,7 @@
+@import "../../../../../../../styles/variables";
+
+.AlphabetRow {
+  width: 100%;
+  @include flex-all-center;
+  gap: 5px;
+}

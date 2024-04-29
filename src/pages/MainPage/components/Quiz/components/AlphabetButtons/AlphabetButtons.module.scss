@@ -1,0 +1,7 @@
+@import "../../../../../../styles/variables";
+
+.AlphabetButtons {
+  width: 100%;
+  @include flex-column-all-center;
+  gap: 5px;
+}
