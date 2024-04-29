@@ -30,7 +30,7 @@ export const LearnVerbItem: FC<IIrregularVerbData> = memo(
           ) : (
             <div className={styles.ruleContainer}>
               <span className={styles.ruleTypeSpan}>Past Simple + Past Participle</span>
-              <span className={styles.ruleContentSpan}>{pastParticiple}</span>
+                <span className={styles.ruleContentSpan}>{pastParticipleString}</span>
             </div>
           )}
         </div>
