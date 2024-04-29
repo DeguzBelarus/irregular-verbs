@@ -5,7 +5,7 @@ import { COMMA_WITH_SPACE } from 'src/constants/constants';
 import styles from './LearnVerbItem.module.scss';
 
 export const LearnVerbItem: FC<IIrregularVerbData> = memo(
-  ({ infinitive, pastParticiple, pastSimple, translation, isUnchangeable }) => {
+  ({ infinitive, pastParticiple, pastSimple, translation, isPastSimpleAndParticipleEqual }) => {
     const translationString = translation.join(COMMA_WITH_SPACE);
     const pastSimpleString = pastSimple.join(COMMA_WITH_SPACE);
     const pastParticipleString = pastParticiple.join(COMMA_WITH_SPACE);
@@ -16,7 +16,7 @@ export const LearnVerbItem: FC<IIrregularVerbData> = memo(
           <span className={styles.translationSpan}>{translationString}</span>
         </p>
         <div className={styles.rulesContainer}>
-          {!isUnchangeable ? (
+          {!isPastSimpleAndParticipleEqual ? (
             <>
               <div className={styles.ruleContainer}>
                 <span className={styles.ruleTypeSpan}>Past Simple</span>

@@ -3,5 +3,5 @@ export interface IIrregularVerbData {
   pastSimple: Array<string>;
   pastParticiple: Array<string>;
   translation: Array<string>;
-  isUnchangeable: boolean;
+  isPastSimpleAndParticipleEqual: boolean;
 }
