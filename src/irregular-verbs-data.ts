@@ -586,7 +586,7 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
   {
     infinitive: 'show',
     pastSimple: ['showed'],
-    pastParticiple: ['shown', 'showed'],
+    pastParticiple: ['showed', 'shown'],
     translation: ['показывать'],
     isPastSimpleAndParticipleEqual: false,
   },
