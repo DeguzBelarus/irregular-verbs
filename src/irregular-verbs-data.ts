@@ -591,6 +591,13 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     isPastSimpleAndParticipleEqual: false,
   },
   {
+    infinitive: 'quit',
+    pastSimple: ['quit, quitted'],
+    pastParticiple: ['quit, quitted'],
+    translation: ['уходить', 'уволиться'],
+    isPastSimpleAndParticipleEqual: true,
+  },
+  {
     infinitive: 'forsake',
     pastSimple: ['forsook'],
     pastParticiple: ['forsaken'],
