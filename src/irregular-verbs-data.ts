@@ -591,6 +591,13 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     isPastSimpleAndParticipleEqual: false,
   },
   {
+    infinitive: 'forsake',
+    pastSimple: ['forsook'],
+    pastParticiple: ['forsaken'],
+    translation: ['оставлять'],
+    isPastSimpleAndParticipleEqual: false,
+  },
+  {
     infinitive: 'shrink',
     pastSimple: ['shrank'],
     pastParticiple: ['shrunk'],
