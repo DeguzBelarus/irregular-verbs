@@ -794,6 +794,13 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     isPastSimpleAndParticipleEqual: false,
   },
   {
+    infinitive: 'awake',
+    pastSimple: ['awoke'],
+    pastParticiple: ['awoken'],
+    translation: ['просыпаться', 'будить'],
+    isPastSimpleAndParticipleEqual: false,
+  },
+  {
     infinitive: 'wear',
     pastSimple: ['wore'],
     pastParticiple: ['worn'],
