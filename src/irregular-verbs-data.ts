@@ -801,6 +801,13 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     isPastSimpleAndParticipleEqual: false,
   },
   {
+    infinitive: 'bleed',
+    pastSimple: ['bled'],
+    pastParticiple: ['bled'],
+    translation: ['кровоточить', 'истекать кровью'],
+    isPastSimpleAndParticipleEqual: true,
+  },
+  {
     infinitive: 'wear',
     pastSimple: ['wore'],
     pastParticiple: ['worn'],
