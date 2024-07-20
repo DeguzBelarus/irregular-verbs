@@ -15,6 +15,7 @@ export const VerbSearchInput = memo(
           type="text"
           value={value}
           onChange={(event) => setValue(event)}
+          spellCheck={false}
           placeholder="Search"
           ref={ref}
         />
