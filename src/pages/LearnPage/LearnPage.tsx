@@ -17,6 +17,7 @@ export const LearnPage: FC = () => {
         verbData.infinitive.toUpperCase().startsWith(verbSearchKey.toUpperCase()),
       )
     : IRREGULAR_VERBS_DATA;
+  const isIrregularVerbsFound = Boolean(filteredVerbsData?.length);
   const verbSearchKeyHandler = ({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
     setVerbSearchKey(value);
   };
@@ -26,6 +27,7 @@ export const LearnPage: FC = () => {
         <span>return to main</span>
       </Link>
       <LearnVerbsWrapper
+        isIrregularVerbsFound={isIrregularVerbsFound}
         verbSearchInput={
           <VerbSearchInput
             value={verbSearchKey}
@@ -34,7 +36,7 @@ export const LearnPage: FC = () => {
           />
         }
       >
-        {filteredVerbsData?.length ? (
+        {isIrregularVerbsFound ? (
           filteredVerbsData.map((verbData, index) => {
             return <LearnVerbItem {...verbData} key={index} />;
           })

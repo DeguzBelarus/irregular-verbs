@@ -25,6 +25,10 @@
     overflow-y: scroll;
     @include scroll;
 
+    &.no-verbs-found {
+      overflow: hidden;
+    }
+
     @include media-laptop {
       width: 95%;
     }
