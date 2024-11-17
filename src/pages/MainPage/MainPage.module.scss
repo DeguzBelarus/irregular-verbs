@@ -8,7 +8,7 @@
   gap: 10px;
   position: relative;
 
-  .learnPageLink {
+  .pageTransferLink {
     display: block;
     height: 20px;
     @include flex-all-center;
@@ -17,29 +17,9 @@
     top: 5px;
     right: 10px;
     color: $accents-color;
-    z-index: 1;
-
-    .bookIcon {
-      width: 20px;
-      height: 100%;
-    }
-  }
-
-  .returnToMainButton {
-    display: block;
-    height: 20px;
-    @include flex-all-center;
-    gap: 5px;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    color: $accents-color;
+    text-transform: uppercase;
+    font-weight: bold;
     z-index: 1;
     cursor: pointer;
-
-    .exitIcon {
-      width: 20px;
-      height: 100%;
-    }
   }
 }
