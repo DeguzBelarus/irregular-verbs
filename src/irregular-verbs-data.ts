@@ -241,6 +241,13 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     isPastSimpleAndParticipleEqual: false,
   },
   {
+    infinitive: 'flee',
+    pastSimple: ['fled'],
+    pastParticiple: ['fled'],
+    translation: ['бежать', 'спасаться бегством'],
+    isPastSimpleAndParticipleEqual: true,
+  },
+  {
     infinitive: 'forbid',
     pastSimple: ['forbad', 'forbade'],
     pastParticiple: ['forbidden'],
@@ -498,6 +505,13 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     pastParticiple: ['ridden'],
     translation: ['ездить верхом'],
     isPastSimpleAndParticipleEqual: false,
+  },
+  {
+    infinitive: 'rid',
+    pastSimple: ['rid', 'ridded'],
+    pastParticiple: ['rid', 'ridded'],
+    translation: ['избавляться', 'освобождаться'],
+    isPastSimpleAndParticipleEqual: true,
   },
   {
     infinitive: 'ring',
