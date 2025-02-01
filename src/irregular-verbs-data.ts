@@ -808,6 +808,13 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     isPastSimpleAndParticipleEqual: true,
   },
   {
+    infinitive: 'bind',
+    pastSimple: ['bound'],
+    pastParticiple: ['bound'],
+    translation: ['связывать', 'объединять'],
+    isPastSimpleAndParticipleEqual: true,
+  },
+  {
     infinitive: 'wear',
     pastSimple: ['wore'],
     pastParticiple: ['worn'],
