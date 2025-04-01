@@ -815,6 +815,20 @@ export const IRREGULAR_VERBS_DATA: Array<IIrregularVerbData> = [
     isPastSimpleAndParticipleEqual: false,
   },
   {
+    infinitive: 'cling ',
+    pastSimple: ['clung'],
+    pastParticiple: ['clung'],
+    translation: ['цепляться', 'виснуть'],
+    isPastSimpleAndParticipleEqual: true,
+  },
+  {
+    infinitive: 'bend ',
+    pastSimple: ['bent'],
+    pastParticiple: ['bent'],
+    translation: ['гнуть', 'сгибаться'],
+    isPastSimpleAndParticipleEqual: true,
+  },
+  {
     infinitive: 'bleed',
     pastSimple: ['bled'],
     pastParticiple: ['bled'],
